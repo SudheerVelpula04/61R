@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="./images/cat.jpg">
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+</head>
+<body>
+    <!--
+    forms
+    -----
+
+    patterns or regex
+    -----------------
+    pattern=""
+
+    abc-  only abc accept
+    123- only 123 accept
+    ABC - only ABC accept
+    [abc]- any inside one char
+    [123]- any inside one char 
+    [ABC]- any inside one char
+    [a-z] - it is start to end any one char a to z
+    [0-9] - it is start to end any one char 0 to 9
+    [A-Z] - it is start to end any one char A to Z
+    [a-z0-9A-Z] - it is only one char lowercase or uppercase or digits
+    + -  one are more pre char ([a-z]+)
+    {n} - max length -uses- mobile numbers ,Aadhar , Pan card , bank acount number,
+            pin-code
+        mobile validation
+        ------------------
+        +917457890123
+        \+91[6-9][0-9]{9}
+        pin- code validation
+        --------------------
+        "5[0-9]{5}"
+
+        task
+        -----
+        Aadhar
+        ="[2-9][0-9]{11}"
+        
+        bank acount validation
+        ="[0-9]{9,17}"
+
+        pan-card validation
+        ="[A-Z]{5}[0-9]{4}[A-Z]"
+
+
+
+
+    {n,}- start length and infinity
+        use-feedbacks
+        {5,}
+    {n,m}- start length and ending length
+        use-{8,16}
+        password validation
+        wifi password
+
+       .-any one char in side the keyboard 
+       ()-grouping
+       |-or 
+
+        gmail validation:
+        -----------------
+        abc@gmail.com
+        abc.abc@gmail.com
+        abc123@gmail.com
+
+        abc@yahoo,gmail,outlook.com,in,edu,co,gov,
+        [a-z0-9.]{6,16}@(gmail|outlook|yahoo)\.(com|in|edu|co|gov)
+
+
+
+
+        .com,in,org,+@gmail,outlook,yahoo.A A-Z 0-9 10
+
+        "\.(com|in|org)\+@(gmail|outlook|yahoo)\.A[A-Z][0-9]{10}"
+
+        password validation
+        -------------------
+
+        *-  0 are more prev char
+        ?- optional char
+        A-any one upper case
+        a-any one lower case
+        !@#$%^&- anyone spacial char
+
+        (?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*]).{8,16}
+
+
+        ^- start
+        $- end
+        [^a-z]- not in-side
+        \d- digits 0-9
+        \s- space ( )
+        \S- non-space
+        \w- upper case and lower case
+        \W- ~"'}[_-+=]"
+        \D- non - digits
+
+        "^(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*]).{8,16}$"
+        
+    
+
+        seminars
+        --------
+        semantic and non-semantic
+        fav icon
+        entities &;
+        meta tags
+        picture tag 
+        embed  
+
+        html
+        ----
+
+        Git 
+        ---
+        10mb -500mb + git commands
+        universal- 70%
+        global information tracking
+        version control system
+        iphone 17 -v
+
+        iphone 18 -v
+        
+
+
+        git-Hub 
+        -------
+
+
+
+
+
+
+
+
+     -->
+
+     <form action="submit.html">
+
+
+        <input type="text" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*]).{8,16}"  required >
+        <input type="submit">
+
+
+     </form>
+</body>
+</html>
